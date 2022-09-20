@@ -1,8 +1,1 @@
-Example of using `vite-plugin-ssr` with React.
-
-```bash
-git clone git@github.com:brillout/vite-plugin-ssr
-cd vite-plugin-ssr/examples/react/
-npm install
-npm run dev
-```
+Run `pnpm exec babel node_modules/vite-plugin-ssr/dist/esm/shared/route.js` and observe that Babel succesfully transpiled the file, despite the `export` being defined before the referenced `import`, see https://github.com/brillout/vite-plugin-ssr/issues/457.
